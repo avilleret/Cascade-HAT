@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/antoine/projets/les_baltazars/dev/CascadeHAT/CascadeHAT.sch</source>
+    <date>jeu. 02 juin 2016 14:54:13 CEST</date>
+    <tool>Eeschema 4.1.0-alpha+201605021002+6717~44~ubuntu15.10.1-product</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>CascadeHAT.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/RPi_GPIO/" tstamps="/5515D395/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>RPi_GPIO.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J2">
+      <value>RPi_GPIO</value>
+      <footprint>RPi_Hat:Pin_Header_Straight_2x20</footprint>
+      <libsource lib="xess" part="RPi_GPIO"/>
+      <sheetpath names="/RPi_GPIO/" tstamps="/5515D395/"/>
+      <tstamp>5516AE26</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>TC4427</value>
+      <footprint>Microchip-TC44xx_SOIC127P600X175-8N</footprint>
+      <libsource lib="Microchip-TC44xx" part="TC4427"/>
+      <sheetpath names="/RPi_GPIO/" tstamps="/5515D395/"/>
+      <tstamp>574EB391</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>IRF540N</value>
+      <footprint>TO-220</footprint>
+      <libsource lib="transistors" part="IRF540N"/>
+      <sheetpath names="/RPi_GPIO/" tstamps="/5515D395/"/>
+      <tstamp>574EF783</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>IRF540N</value>
+      <footprint>TO-220</footprint>
+      <libsource lib="transistors" part="IRF540N"/>
+      <sheetpath names="/RPi_GPIO/" tstamps="/5515D395/"/>
+      <tstamp>5750093A</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>DIODE</value>
+      <footprint>xess-CHIP-LED0805</footprint>
+      <libsource lib="xess" part="DIODE"/>
+      <sheetpath names="/RPi_GPIO/" tstamps="/5515D395/"/>
+      <tstamp>57500E8D</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>DIODE</value>
+      <footprint>xess-CHIP-LED0805</footprint>
+      <libsource lib="xess" part="DIODE"/>
+      <sheetpath names="/RPi_GPIO/" tstamps="/5515D395/"/>
+      <tstamp>57501317</tstamp>
+    </comp>
+    <comp ref="P2">
+      <value>CONN_01X02</value>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/RPi_GPIO/" tstamps="/5515D395/"/>
+      <tstamp>575013B6</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>CONN_01X02</value>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/RPi_GPIO/" tstamps="/5515D395/"/>
+      <tstamp>57501759</tstamp>
+    </comp>
+    <comp ref="P3">
+      <value>CONN_01X02</value>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/RPi_GPIO/" tstamps="/5515D395/"/>
+      <tstamp>57501943</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="conn" part="CONN_01X02">
+      <description>Connector, single row, 01x02</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X02</fp>
+        <fp>Pin_Header_Angled_1X02</fp>
+        <fp>Socket_Strip_Straight_1X02</fp>
+        <fp>Socket_Strip_Angled_1X02</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="xess" part="DIODE">
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">DIODE</field>
+        <field name="Footprint">xess-CHIP-LED0805</field>
+      </fields>
+      <pins>
+        <pin num="A" name="A" type="passive"/>
+        <pin num="C" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="transistors" part="IRF540N">
+      <description>100V Vds, 33A Id, HEXFET N-Channel MOSFET, TO-220</description>
+      <docs>http://www.irf.com/product-info/datasheets/data/irf540n.pdf</docs>
+      <footprints>
+        <fp>TO-220*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">IRF540N</field>
+        <field name="Footprint">TO-220</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="D" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="xess" part="RPi_GPIO">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">RPi_GPIO</field>
+      </fields>
+      <pins>
+        <pin num="1" name="3.3V" type="power_in"/>
+        <pin num="2" name="5V" type="power_in"/>
+        <pin num="3" name="BCM2_SDA" type="BiDi"/>
+        <pin num="4" name="5V" type="power_in"/>
+        <pin num="5" name="BCM3_SCL" type="BiDi"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="BCM4_GPCLK0" type="BiDi"/>
+        <pin num="8" name="BCM14_TXD" type="BiDi"/>
+        <pin num="9" name="GND" type="power_in"/>
+        <pin num="10" name="BCM15_RXD" type="BiDi"/>
+        <pin num="11" name="BCM17" type="BiDi"/>
+        <pin num="12" name="BCM18_PCM_C" type="BiDi"/>
+        <pin num="13" name="BCM27_PCM_D" type="BiDi"/>
+        <pin num="14" name="GND" type="power_in"/>
+        <pin num="15" name="BCM22" type="BiDi"/>
+        <pin num="16" name="BCM23" type="BiDi"/>
+        <pin num="17" name="3.3V" type="power_in"/>
+        <pin num="18" name="BCM24" type="BiDi"/>
+        <pin num="19" name="BCM10_MOSI" type="BiDi"/>
+        <pin num="20" name="GND" type="power_in"/>
+        <pin num="21" name="BCM9_MISO" type="BiDi"/>
+        <pin num="22" name="BCM25" type="BiDi"/>
+        <pin num="23" name="BCM11_SCLK" type="BiDi"/>
+        <pin num="24" name="BCM8_CE0" type="BiDi"/>
+        <pin num="25" name="GND" type="power_in"/>
+        <pin num="26" name="BCM7_CE1" type="BiDi"/>
+        <pin num="27" name="BCM0_ID_SD" type="BiDi"/>
+        <pin num="28" name="BCM1_ID_SC" type="BiDi"/>
+        <pin num="29" name="BCM5" type="BiDi"/>
+        <pin num="30" name="GND" type="power_in"/>
+        <pin num="31" name="BCM6" type="BiDi"/>
+        <pin num="32" name="BCM12" type="BiDi"/>
+        <pin num="33" name="BCM13" type="BiDi"/>
+        <pin num="34" name="GND" type="power_in"/>
+        <pin num="35" name="BCM19_MISO" type="BiDi"/>
+        <pin num="36" name="BCM16" type="BiDi"/>
+        <pin num="37" name="BCM26" type="BiDi"/>
+        <pin num="38" name="BCM20_MOSI" type="BiDi"/>
+        <pin num="39" name="GND" type="power_in"/>
+        <pin num="40" name="BCM21_SCLK" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="Microchip-TC44xx" part="TC4427">
+      <aliases>
+        <alias>TC4427COA713</alias>
+      </aliases>
+      <footprints>
+        <fp>*SOIC127P600X175-8N*</fp>
+        <fp>*DIP254P762X432-8*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TC4427</field>
+        <field name="Footprint">Microchip-TC44xx_SOIC127P600X175-8N</field>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="unspc"/>
+        <pin num="2" name="IN_A" type="input"/>
+        <pin num="3" name="GND" type="passive"/>
+        <pin num="4" name="IN_B" type="input"/>
+        <pin num="5" name="OUT_B" type="output"/>
+        <pin num="6" name="VDD" type="power_in"/>
+        <pin num="7" name="OUT_A" type="output"/>
+        <pin num="8" name="NC_2" type="unspc"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="transistors">
+      <uri>/usr/share/kicad/library/transistors.lib</uri>
+    </library>
+    <library logical="Microchip-TC44xx">
+      <uri>/home/antoine/projets/les_baltazars/dev/CascadeHAT/Microchip-TC44xx.lib</uri>
+    </library>
+    <library logical="xess">
+      <uri>/home/antoine/projets/les_baltazars/dev/CascadeHAT/xess.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(J2-Pad16)">
+      <node ref="U1" pin="2"/>
+      <node ref="J2" pin="16"/>
+    </net>
+    <net code="2" name="Net-(J2-Pad18)">
+      <node ref="J2" pin="18"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="3" name="Net-(Q1-Pad1)">
+      <node ref="U1" pin="7"/>
+      <node ref="Q1" pin="1"/>
+    </net>
+    <net code="4" name="Net-(D1-PadA)">
+      <node ref="D1" pin="A"/>
+      <node ref="P1" pin="1"/>
+      <node ref="Q1" pin="2"/>
+    </net>
+    <net code="5" name="+5V">
+      <node ref="J2" pin="4"/>
+      <node ref="J2" pin="2"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="6" name="Net-(D2-PadA)">
+      <node ref="P2" pin="1"/>
+      <node ref="D2" pin="A"/>
+      <node ref="Q2" pin="2"/>
+    </net>
+    <net code="7" name="GND">
+      <node ref="J2" pin="25"/>
+      <node ref="U1" pin="3"/>
+      <node ref="J2" pin="39"/>
+      <node ref="J2" pin="14"/>
+      <node ref="J2" pin="34"/>
+      <node ref="Q2" pin="3"/>
+      <node ref="J2" pin="6"/>
+      <node ref="J2" pin="9"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="J2" pin="20"/>
+      <node ref="J2" pin="30"/>
+      <node ref="P3" pin="2"/>
+    </net>
+    <net code="8" name="VDD">
+      <node ref="D1" pin="C"/>
+      <node ref="P2" pin="2"/>
+      <node ref="D2" pin="C"/>
+      <node ref="P1" pin="2"/>
+      <node ref="P3" pin="1"/>
+    </net>
+    <net code="9" name="Net-(Q2-Pad1)">
+      <node ref="U1" pin="5"/>
+      <node ref="Q2" pin="1"/>
+    </net>
+    <net code="10" name="Net-(J2-Pad32)">
+      <node ref="J2" pin="32"/>
+    </net>
+    <net code="11" name="Net-(J2-Pad13)">
+      <node ref="J2" pin="13"/>
+    </net>
+    <net code="12" name="Net-(J2-Pad23)">
+      <node ref="J2" pin="23"/>
+    </net>
+    <net code="13" name="Net-(J2-Pad33)">
+      <node ref="J2" pin="33"/>
+    </net>
+    <net code="14" name="Net-(J2-Pad24)">
+      <node ref="J2" pin="24"/>
+    </net>
+    <net code="15" name="Net-(J2-Pad15)">
+      <node ref="J2" pin="15"/>
+    </net>
+    <net code="16" name="Net-(J2-Pad22)">
+      <node ref="J2" pin="22"/>
+    </net>
+    <net code="17" name="Net-(J2-Pad35)">
+      <node ref="J2" pin="35"/>
+    </net>
+    <net code="18" name="Net-(J2-Pad26)">
+      <node ref="J2" pin="26"/>
+    </net>
+    <net code="19" name="Net-(J2-Pad36)">
+      <node ref="J2" pin="36"/>
+    </net>
+    <net code="20" name="Net-(J2-Pad17)">
+      <node ref="J2" pin="17"/>
+    </net>
+    <net code="21" name="Net-(J2-Pad27)">
+      <node ref="J2" pin="27"/>
+    </net>
+    <net code="22" name="Net-(J2-Pad37)">
+      <node ref="J2" pin="37"/>
+    </net>
+    <net code="23" name="Net-(J2-Pad10)">
+      <node ref="J2" pin="10"/>
+    </net>
+    <net code="24" name="Net-(J2-Pad3)">
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="25" name="Net-(J2-Pad5)">
+      <node ref="J2" pin="5"/>
+    </net>
+    <net code="26" name="Net-(J2-Pad7)">
+      <node ref="J2" pin="7"/>
+    </net>
+    <net code="27" name="Net-(J2-Pad8)">
+      <node ref="J2" pin="8"/>
+    </net>
+    <net code="28" name="Net-(J2-Pad40)">
+      <node ref="J2" pin="40"/>
+    </net>
+    <net code="29" name="Net-(J2-Pad11)">
+      <node ref="J2" pin="11"/>
+    </net>
+    <net code="30" name="Net-(J2-Pad21)">
+      <node ref="J2" pin="21"/>
+    </net>
+    <net code="31" name="Net-(J2-Pad31)">
+      <node ref="J2" pin="31"/>
+    </net>
+    <net code="32" name="Net-(J2-Pad12)">
+      <node ref="J2" pin="12"/>
+    </net>
+    <net code="33" name="Net-(J2-Pad28)">
+      <node ref="J2" pin="28"/>
+    </net>
+    <net code="34" name="Net-(J2-Pad38)">
+      <node ref="J2" pin="38"/>
+    </net>
+    <net code="35" name="Net-(J2-Pad19)">
+      <node ref="J2" pin="19"/>
+    </net>
+    <net code="36" name="Net-(J2-Pad29)">
+      <node ref="J2" pin="29"/>
+    </net>
+    <net code="37" name="Net-(U1-Pad1)">
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="38" name="Net-(J2-Pad1)">
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="39" name="Net-(U1-Pad8)">
+      <node ref="U1" pin="8"/>
+    </net>
+  </nets>
+</export>
