@@ -1,5 +1,7 @@
 % RPi B+ Hat
 
+forked from : https://github.com/xesscorp/RPi_Hat_Template.git
+
 Raspberry Pi B+ Hat
 ============================
 
